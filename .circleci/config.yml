@@ -6,12 +6,12 @@ commands:
     parameters:
       # Add parameter here 
     steps:
-      - run:
-          name: Delete S3 content
-          when: on_fail
-          command: |
-            aws s3 rm s3://udapeople-${CIRCLE_WORKFLOW_ID:0:7} --recursive
-            exit 1    
+      # - run:
+      #     name: Delete S3 content
+      #     when: on_fail
+      #     command: |
+      #       aws s3 rm s3://udapeople-${CIRCLE_WORKFLOW_ID:0:7} --recursive
+      #       exit 0    
 
       - run:
           name: Destroy environments
@@ -19,7 +19,7 @@ commands:
           command: |
             aws cloudformation delete-stack --stack-name udapeople-backend-${CIRCLE_WORKFLOW_ID:0:7}
             aws cloudformation delete-stack --stack-name udapeople-frontend-${CIRCLE_WORKFLOW_ID:0:7}
-            exit 1
+            exit 0
             
 jobs:
   build-frontend:
