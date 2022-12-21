@@ -344,10 +344,8 @@ jobs:
 
   cloudfront-update:
     docker:
-      # Docker image here that supports AWS CLI
       - image: circleci/node:13.8.0
     steps:
-      # Checkout code from git
       - checkout
       - run:
           name: Install dependencies
@@ -374,12 +372,10 @@ jobs:
 
   cleanup:
       docker:
-        # Docker image here
         - image: amazon/aws-cli
       steps:
-        # Checkout code from git
         - run:
-            name: Get old stack workflow id and remove stacks
+            name: Get old stack workflow id
             command: |
               echo <<pipeline.parameters.workflow_id>>
               export OldWorkflowID=<<pipeline.parameters.workflow_id>>
@@ -388,10 +384,10 @@ jobs:
               --stack-status-filter CREATE_COMPLETE --no-paginate --output text)
               if [[ "${STACKS[@]}" =~ "${OldWorkflowID}" ]]
               then
-                echo "----------cleaning up stacks------------"
-                aws s3 rm "s3://udapeople-${OldWorkflowID}" --recursive
-                aws cloudformation delete-stack --stack-name "udapeople-backend-${OldWorkflowID}"
-                aws cloudformation delete-stack --stack-name "udapeople-frontend-${OldWorkflowID}"
+                # echo "----------cleaning up stacks------------"
+                # aws s3 rm "s3://udapeople-${OldWorkflowID}" --recursive
+                # aws cloudformation delete-stack --stack-name "udapeople-backend-${OldWorkflowID}"
+                # aws cloudformation delete-stack --stack-name "udapeople-frontend-${OldWorkflowID}"
               fi    
     
 workflows:
