@@ -372,6 +372,7 @@ jobs:
       docker:
         - image: amazon/aws-cli
       steps:
+        - checkout
         - run:
             name: Get old stack workflow id
             command: |
@@ -418,5 +419,5 @@ workflows:
           requires: [deploy-backend, deploy-frontend]
       - cloudfront-update:
           requires: [smoke-test]
-      # - cleanup:
-      #     requires: [cloudfront-update]
+      - cleanup:
+          requires: [cloudfront-update]
