@@ -38,7 +38,6 @@ commands:
             npm run build
             npm run migrations:revert
             
-
 jobs:
   build-frontend:
     docker:
