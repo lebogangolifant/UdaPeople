@@ -33,19 +33,19 @@ UdaPeople(Cloud-Based Software): a fictional revolutionary concept in Human Reso
 ||***Evidence in your code that:*** Compile errors have been fixed.<br>Unit tests have been fixed.<br>All critical security vulnerabilities caught by the “Analyze” job have been fixed|[.circleci](./.circleci)<br>[backend](./backend)<br>[frontend](./frontend)|
 |Utilize a configuration management tool to accomplish deployment to cloud-based servers.|Console output of appropriate failure for infrastructure creation job (using CloudFormation). |[SCREENSHOT05](./udapeople-screenshots/SCREENSHOT05.png)|
 ||Console output of a smoke test job that is failing appropriately. |[SCREENSHOT06](./udapeople-screenshots/SCREENSHOT06.png)|
-||Console output of a successful rollback after a failed smoke test. |[SCREENSHOT07](./udapeople-screenshots/SCREENSHOT07.png)|
+||Console output of a successful rollback after a failed smoke test. |[SCREENSHOT07](./udapeople-screenshots/SCREENSHOT07%20.png)|
 ||Console output of successful promotion of new version to production in CloudFront. |[SCREENSHOT08](./udapeople-screenshots/SCREENSHOT08.png)|
 ||Console output of successful cleanup job that removes old S3 bucket and EC2 instance. |[SCREENSHOT09](./udapeople-screenshots/SCREENSHOT09.png)|
 ||Evidence that the deploy jobs only happen on the `master` branch. |[SCREENSHOT10](./udapeople-screenshots/SCREENSHOT10.png)|
-||Evidence of deployed and functioning front-end application in CloudFront. |[URL03_SCREENSHOT](./udapeople-screenshots/URL03_SCREENSHOT.jpg)|
-||Evidence of healthy back-end application. |[URL02]<br>[URL04_SCREENSHOT](./udapeople-screenshots/URL04_SCREENSHOT%2.png)|
+||Evidence of deployed and functioning front-end application in CloudFront. |[URL03_SCREENSHOT](./udapeople-screenshots/[URL03_SCREENSHOT].png)|
+||Evidence of healthy back-end application. |[URL02]<br>[URL04_SCREENSHOT](./udapeople-screenshots/[URL04_SCREENSHOT].png)|
 <h3 align="center">Section 3: Turn Errors into Sirens</h3>  
 
 |CRITERIA|MEETS SPECIFICATIONS |Files |
 |:-----|:-----|:-----|
-|Surface critical server errors for diagnosis using centralized logging.|Evidence of Prometheus Server. |[URL05]<br>[URL05_SCREENSHOT](./udapeople-screenshots/URL05_SCREENSHOT%20.png)|
-||Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. |[SCREENSHOT11 *CPU*](./udapeople-screenshots/SCREENSHOT11-CPU%20.png)<br>[SCREENSHOT11 *Disk Usage*](./udapeople-screenshots/SCREENSHOT11-DISK%20.png)<br>[SCREENSHOT11 *Memory*](./screenshots/SCREENSHOT11-MEMORY%20.png)|
-||Evidence that Prometheus and AlertManager send alerts when certain conditions exist in the EC2 instance. |[SCREENSHOT12](./udapeople-screenshots/SCREENSHOT12%20.png)|
+|Surface critical server errors for diagnosis using centralized logging.|Evidence of Prometheus Server. |[URL05]<br>[URL05_SCREENSHOT](./udapeople-screenshots/[URL05_SCREENSHOT].png)|
+||Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. |[SCREENSHOT11 *CPU*](./udapeople-screenshots/SCREENSHOT11-CPU%20.png)<br>[SCREENSHOT11 *Disk Usage*](./udapeople-screenshots/SCREENSHOT11-DISK.png)<br>[SCREENSHOT11 *Memory*](./screenshots/SCREENSHOT11-MEMORY.png)|
+||Evidence that Prometheus and AlertManager send alerts when certain conditions exist in the EC2 instance. |[SCREENSHOT12](./udapeople-screenshots/SCREENSHOT12.png)|
 
 
 ### Built With
