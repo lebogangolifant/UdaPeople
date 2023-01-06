@@ -69,4 +69,4 @@ node_modules
 .env
 dist
 
-*.pdf
+!proposal.pdf
