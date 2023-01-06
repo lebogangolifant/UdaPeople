@@ -16,6 +16,7 @@ UdaPeople(Cloud-Based Software): a fictional revolutionary concept in Human Reso
 * Configuration Management
 * Turn Errors into Sirens
 
+
 ### Udapeople Project: Deploying Working, Trustworthy Software
 
 
@@ -26,13 +27,13 @@ UdaPeople(Cloud-Based Software): a fictional revolutionary concept in Human Reso
 ||Evidence of code-based CI/CD configuration in the form of yaml files in your git repository.|[config.yml](./.circleci/config.yml)|[![config.yml](https://img.shields.io/badge/config.yml-EXISTS-brightgre)](./.circleci/config.yml) <br> [![CircleCI](https://circleci.com/gh/github.com/lebogangolifant/udapeople.svg?style=shield&circle-token=499c794914a6668bd794027edc74d9400d7a361f)](https://app.circleci.com/pipelines/github.com/lebogangolifant/udapeople?branch=master&filter=all)  |
 ||***Console output of various pre-deploy job failure scenarios:***||
 ||Build Jobs that failed because of compile errors. |[SCREENSHOT01](./udapeople-screenshots/SCREENSHOT01.png)|
-||Failed unit tests. |[SCREENSHOT02](./udapeople-screenshots/SCREENSHOT02.png)|
-||Failure because of vulnerable packages. |[SCREENSHOT03](./udapeople-screenshots/SCREENSHOT03.png)|
-||An alert from one of your failed builds. |[SCREENSHOT04](./udapeople-screenshots/SCREENSHOT04.png) e-mail Notification<br> |
+||Failed unit tests. |[SCREENSHOT02](./udapeople-screenshots/SCREENSHOT02%20.png)|
+||Failure because of vulnerable packages. |[SCREENSHOT03](./udapeople-screenshots/SCREENSHOT03%20.png)|
+||An alert from one of your failed builds. |[SCREENSHOT04](./udapeople-screenshots/SCREENSHOT04%20.png) e-mail Notification<br> |
 ||***Evidence in your code that:*** Compile errors have been fixed.<br>Unit tests have been fixed.<br>All critical security vulnerabilities caught by the “Analyze” job have been fixed|[.circleci](./.circleci)<br>[backend](./backend)<br>[frontend](./frontend)|
 |Utilize a configuration management tool to accomplish deployment to cloud-based servers.|Console output of appropriate failure for infrastructure creation job (using CloudFormation). |[SCREENSHOT05](./udapeople-screenshots/SCREENSHOT05.png)|
 ||Console output of a smoke test job that is failing appropriately. |[SCREENSHOT06](./udapeople-screenshots/SCREENSHOT06.png)|
-||Console output of a successful rollback after a failed smoke test. |[SCREENSHOT07](./udapeople-screenshots/SCREENSHOT07.png)|
+||Console output of a successful rollback after a failed smoke test. |[SCREENSHOT07](./udapeople-screenshots/SCREENSHOT07%20.png)|
 ||Console output of successful promotion of new version to production in CloudFront. |[SCREENSHOT08](./udapeople-screenshots/SCREENSHOT08.png)|
 ||Console output of successful cleanup job that removes old S3 bucket and EC2 instance. |[SCREENSHOT09](./udapeople-screenshots/SCREENSHOT09.png)|
 ||Evidence that the deploy jobs only happen on the `master` branch. |[SCREENSHOT10](./udapeople-screenshots/SCREENSHOT10.png)|
