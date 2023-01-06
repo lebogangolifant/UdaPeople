@@ -44,7 +44,7 @@ UdaPeople(Cloud-Based Software): a fictional revolutionary concept in Human Reso
 |CRITERIA|MEETS SPECIFICATIONS |Files |
 |:-----|:-----|:-----|
 |Surface critical server errors for diagnosis using centralized logging.|Evidence of Prometheus Server. |[URL05]<br>[URL05_SCREENSHOT](./udapeople-screenshots/[URL05_SCREENSHOT].png)|
-||Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. |[SCREENSHOT11 *CPU*](./udapeople-screenshots/SCREENSHOT11-CPU%20.png)<br>[SCREENSHOT11 *Disk Usage*](./udapeople-screenshots/SCREENSHOT11-DISK.png)<br>[SCREENSHOT11 *Memory*](./screenshots/SCREENSHOT11-MEMORY.png)|
+||Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. |[SCREENSHOT11 *CPU*](./udapeople-screenshots/SCREENSHOT11-CPU.png)<br>[SCREENSHOT11 *Disk Usage*](./udapeople-screenshots/SCREENSHOT11-DISK.png)<br>[SCREENSHOT11 *Memory*](./udapeople-screenshots/SCREENSHOT11-MEMORY.png)|
 ||Evidence that Prometheus and AlertManager send alerts when certain conditions exist in the EC2 instance. |[SCREENSHOT12](./udapeople-screenshots/SCREENSHOT12.png)|
 
 
