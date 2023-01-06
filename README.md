@@ -1,54 +1,52 @@
-We are archiving this repository because we do not want learners to push personal development to the current repository. If you have any issues or suggestions to make, feel free to:
-- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues.
-- [Submit a support ticket](https://udacity.zendesk.com/hc/en-us/requests/new) along with the link to your forked repository. 
-- If you are an enterprise learner, please [Submit a support ticket here](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131)
+# Give your Application Auto-Deploy Superpowers
 
-## Give your Application Auto-Deploy Superpowers
+A CI-CD pipeline for a client/server TypeScript project hosted on AWS EC2 and CloudFront and monitored with Prometheus,
+with E-mail notifications used for alerts.
 
-In this project, you will prove your mastery of the following learning objectives:
+## Product
 
-- Explain the fundamentals and benefits of CI/CD to achieve, build, and deploy automation for cloud-based software products.
-- Utilize Deployment Strategies to design and build CI/CD pipelines that support Continuous Delivery processes.
-- Utilize a configuration management tool to accomplish deployment to cloud-based servers.
-- Surface critical server errors for diagnosis using centralized structured logging.
+UdaPeople(Cloud-Based Software): a fictional revolutionary concept in Human Resources which promises to help small businesses care better for their most valuable resource: their people
 
 ![Diagram of CI/CD Pipeline we will be building.](udapeople.png)
 
+
 ### Instructions
 
-* [Selling CI/CD](instructions/0-selling-cicd.md)
-* [Getting Started](instructions/1-getting-started.md)
-* [Deploying Working, Trustworthy Software](instructions/2-deploying-trustworthy-code.md)
-* [Configuration Management](instructions/3-configuration-management.md)
-* [Turn Errors into Sirens](instructions/4-turn-errors-into-sirens.md)
+* Deploying Working, Trustworthy Software
+* Configuration Management
+* Turn Errors into Sirens
 
-### Project Submission
+### Udapeople Project: Deploying Working, Trustworthy Software
 
-For your submission, please submit the following:
 
-- A text file named `urls.txt` including:
-  1. Public Url to GitHub repository (not private) [URL01]
-  1. Public URL for your S3 Bucket (aka, your green candidate front-end) [URL02]
-  1. Public URL for your CloudFront distribution (aka, your blue production front-end) [URL03]
-  1. Public URLs to deployed application back-end in EC2 [URL04]
-  1. Public URL to your Prometheus Server [URL05]
-- Your screenshots in JPG or PNG format, named using the screenshot number listed in the instructions. These screenshots should be included in your code repository in the root folder.
-  1. Job failed because of compile errors. [SCREENSHOT01]
-  1. Job failed because of unit tests. [SCREENSHOT02]
-  1. Job that failed because of vulnerable packages. [SCREENSHOT03]
-  1. An alert from one of your failed builds. [SCREENSHOT04]
-  1. Appropriate job failure for infrastructure creation. [SCREENSHOT05]
-  1. Appropriate job failure for the smoke test job. [SCREENSHOT06]
-  1. Successful rollback after a failed smoke test. [SCREENSHOT07]  
-  1. Successful promotion job. [SCREENSHOT08]
-  1. Successful cleanup job. [SCREENSHOT09]
-  1. Only deploy on pushed to `master` branch. [SCREENSHOT10]
-  1. Provide a screenshot of a graph of your EC2 instance including available memory, available disk space, and CPU usage. [SCREENSHOT11]
-  1. Provide a screenshot of an alert that was sent by Prometheus. [SCREENSHOT12]
+ 
+|CRITERIA|MEETS SPECIFICATIONS |Files |
+|:-----|:-----|:-----|
+|Utilize Deployment Strategies to design and build CI/CD pipelines that support Continuous Delivery processes.|Public git repository with project code. |[URL01](https://github.com/github.com/lebogangolifant/udapeople)<br>https://github.com/lebogangolifant/udapeople|[![url1](https://img.shields.io/badge/URL01-EXISTS-brightgre)](https://github.com/lebogangolifant/udapeople) |
+||Evidence of code-based CI/CD configuration in the form of yaml files in your git repository.|[config.yml](./.circleci/config.yml)|[![config.yml](https://img.shields.io/badge/config.yml-EXISTS-brightgre)](./.circleci/config.yml) <br> [![CircleCI](https://circleci.com/gh/github.com/lebogangolifant/udapeople.svg?style=shield&circle-token=499c794914a6668bd794027edc74d9400d7a361f)](https://app.circleci.com/pipelines/github.com/lebogangolifant/udapeople?branch=master&filter=all)  |
+||***Console output of various pre-deploy job failure scenarios:***||
+||Build Jobs that failed because of compile errors. |[SCREENSHOT01](./udapeople-screenshots/SCREENSHOT01.png)|
+||Failed unit tests. |[SCREENSHOT02](./udapeople-screenshots/SCREENSHOT02.png)|
+||Failure because of vulnerable packages. |[SCREENSHOT03](./udapeople-screenshots/SCREENSHOT03.png)|
+||An alert from one of your failed builds. |[SCREENSHOT04](./udapeople-screenshots/SCREENSHOT04.png) e-mail Notification<br> |
+||***Evidence in your code that:*** Compile errors have been fixed.<br>Unit tests have been fixed.<br>All critical security vulnerabilities caught by the “Analyze” job have been fixed|[.circleci](./.circleci)<br>[backend](./backend)<br>[frontend](./frontend)|
+|Utilize a configuration management tool to accomplish deployment to cloud-based servers.|Console output of appropriate failure for infrastructure creation job (using CloudFormation). |[SCREENSHOT05](./udapeople-screenshots/SCREENSHOT05.png)|
+||Console output of a smoke test job that is failing appropriately. |[SCREENSHOT06](./udapeople-screenshots/SCREENSHOT06.png)|
+||Console output of a successful rollback after a failed smoke test. |[SCREENSHOT07](./udapeople-screenshots/SCREENSHOT07.png)|
+||Console output of successful promotion of new version to production in CloudFront. |[SCREENSHOT08](./udapeople-screenshots/SCREENSHOT08.png)|
+||Console output of successful cleanup job that removes old S3 bucket and EC2 instance. |[SCREENSHOT09](./udapeople-screenshots/SCREENSHOT09.png)|
+||Evidence that the deploy jobs only happen on the `master` branch. |[SCREENSHOT10](./udapeople-screenshots/SCREENSHOT10.png)|
+||Evidence of deployed and functioning front-end application in an S3 bucket .|[URL02]<br>[URL02_SCREENSHOT](./udapeople-screenshots/URL02_SCREENSHOT.png)|
+||Evidence of deployed and functioning front-end application in CloudFront. |[URL03_SCREENSHOT](./udapeople-screenshots/URL03_SCREENSHOT.jpg)<br>[URL03-2_SCREENSHOT](./udapeople-screenshots/URL03_SCREENSHOT-2.png) |
+||Evidence of healthy back-end application. |[URL02]<br>[URL04_SCREENSHOT](./udapeople-screenshots/URL04_SCREENSHOT.png)|
+<h3 align="center">Section 3: Turn Errors into Sirens</h3>  
 
-- Your presentation should be in PDF format named "presentation.pdf" and should be included in your code repository root folder. 
+|CRITERIA|MEETS SPECIFICATIONS |Files |
+|:-----|:-----|:-----|
+|Surface critical server errors for diagnosis using centralized logging.|Evidence of Prometheus Server. |[URL05]<br>[URL05_SCREENSHOT](./udapeople-screenshots/URL05_SCREENSHOT.png)|
+||Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. |[SCREENSHOT11 *CPU*](./udapeople-screenshots/SCREENSHOT11-CPU.png)<br>[SCREENSHOT11 *Disk Usage*](./udapeople-screenshots/SCREENSHOT11-DISK.png)<br>[SCREENSHOT11 *Memory*](./screenshots/SCREENSHOT11-MEMORY.png)|
+||Evidence that Prometheus and AlertManager send alerts when certain conditions exist in the EC2 instance. |[SCREENSHOT12](./udapeople-screenshots/SCREENSHOT12.png)|
 
-Before you submit your project, please check your work against the project rubric. If you haven’t satisfied each criterion in the rubric, then revise your work so that you have met all the requirements. 
 
 ### Built With
 
